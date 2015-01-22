@@ -4,7 +4,7 @@ That gem add simple sugar for ActiveSupport::Notifications
 
 Subscribe to notifications
 
-```
+```ruby
 require 'instrumentation'
 
 class UserNotifier
@@ -20,7 +20,7 @@ end
 
 If you use Instrumentation by ActiveRecord model you can instrument model's changes and create one subscriber to all produced events
 
-``
+```ruby
 require 'Instrumentation'
 
 class User < ActiveRecord::Base
@@ -37,7 +37,7 @@ class ModelsMutationsSubscriber
   def self.call(channel, _, _, _, payload)
   end
 end
-``
+```
 
 ## Installation
 
