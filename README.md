@@ -1,6 +1,6 @@
 # Instrumentation
 
-That gem add simple sugar for ActiveSupport::Notifications
+This gem adds simple sugar for ActiveSupport::Notifications
 
 Subscribe to notifications
 
@@ -21,7 +21,7 @@ end
 If you use Instrumentation by ActiveRecord model you can instrument model's changes and create one subscriber to all produced events
 
 ```ruby
-require 'Instrumentation'
+require 'instrumentation'
 
 class User < ActiveRecord::Base
   include Instrumentation
@@ -43,7 +43,7 @@ end
 
 Add this line to your application's Gemfile:
 
-    gem 'instrumentation'
+    gem 'instrumentation', github: 'fatum/instrumentation'
 
 And then execute:
 
